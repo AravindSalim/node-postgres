@@ -12,6 +12,10 @@ app.use(function (req, res, next) {
   next();
 });
 
+app.get("/",(req,res) => {
+res.send("<h1> ITs working </h1>");
+});
+
 app.post('/createfeedback', (req, res) => {
   feedback_model.createFeedback(req.body)
   .then(response => {
