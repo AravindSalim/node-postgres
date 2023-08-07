@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
 });
 
 app.get("/",(req,res) => {
-res.send("<h1> ITs working </h1>");
+res.send("<h1> Chatbot App </h1>");
 });
 
 app.post('/createfeedback', (req, res) => {
